@@ -81,7 +81,7 @@ section{
     flex: 1;
 }
 
-.right.heading {
+.right{
     text-align: right;
 }
 .right.para{
@@ -144,17 +144,21 @@ section{
     margin: 0;
 }
 .button{
-    background-color: var(--dark);
-    color:var(--light);
+
     display: inline-block;
     text-decoration: none;
+    text-align: center;
+}
+.project-card >.button{
+    background-color: var(--dark);
+    color:var(--light);
     padding: 0.5rem 1.5rem;
     margin: 1rem 0 0 0;
     position: absolute;
     bottom: 4%;
     right:2%;
 }
-.button:hover{
+.project-card >.button:hover{
     background-color: var(--primary2);
     color:var(--dark);
 }
@@ -164,4 +168,36 @@ section{
 }
 .closing{
     text-align: right;
+}
+/*graphic*/
+.graphic{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:0;
+
+}
+.graphic>.block{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    width: 15rem;
+
+}
+.graphic>.color1{
+    background-color: var(--primary1);
+}
+.graphic>.color2{
+    background-color: var(--primary2);
+}
+.graphic>.button{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark);
+    padding:3rem 1rem;
+}
+.graphic>.button:hover{
+    background-color: var(--light);
 }
