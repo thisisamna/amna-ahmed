@@ -38,6 +38,7 @@ header{
     text-transform: uppercase;
     background: linear-gradient(90deg, #f764fa 0%, #FEC0FF 70%);
 }
+
 nav{
     background-color: var(--light);
     padding: 0;
@@ -71,7 +72,9 @@ section{
     background-color: var(--dark);
     color: var(--light);
     flex-direction: row-reverse;
+
 }
+
 .split{
     display: flex;
     align-items: center;
@@ -84,17 +87,17 @@ section{
 .right{
     text-align: right;
 }
-.right.para{
+p.right{
     padding-left: 1.5rem;
 }
-.left.para{
+p.left{
     padding-right: 1.5rem;
 }
 .left{
     text-align: left;
 }
 
-.split > .para > p{
+.split > p{
     padding: 0 0 1rem 0;
     margin: 0;
 }
@@ -106,24 +109,23 @@ section{
     .right p{
         text-align: left !important;
     }
-    .split > .heading >h1{
-        text-align: center;
-        font-size: 2rem !important;
+    h1{
+        text-align: center !important;
     }
     .split >*{
         max-width: 50ch;
-    }.right.para{
+    }p.right{
         padding-left: 0 !important;
     }
-    .left.para{
+    p.left{
         padding-right: 0 !important;
     }
 
 }
-
 /* Projects */
 .projects{
-    background: linear-gradient(180deg, #4DF6C6 0%, rgba(217, 217, 217, 0.00) 51.56%);
+    background: linear-gradient(90deg, #4df6c6 25%, #f764fa 75%);
+
 }
 .projects-wrapper{
     display: flex;
@@ -148,6 +150,8 @@ section{
     display: inline-block;
     text-decoration: none;
     text-align: center;
+    font-weight: var(--fw-bold);
+
 }
 .project-card >.button{
     background-color: var(--dark);
@@ -159,15 +163,22 @@ section{
     right:2%;
 }
 .project-card >.button:hover{
-    background-color: var(--primary2);
-    color:var(--dark);
+    background-color: var(--light);
+    color:var(--primary1);
 }
 .tag{
     font-weight: var(--fw-bold);
     letter-spacing: 0.2rem;
+    
+
+}
+.opening{
+    text-align: left;
+
 }
 .closing{
     text-align: right;
+  
 }
 /*graphic*/
 .graphic{
@@ -175,6 +186,14 @@ section{
     grid-template-columns: 1fr 1fr;
     padding:0;
 
+}
+.graphic-container{
+    padding: 0;
+}
+.graphic-container>h1{
+    padding: 1rem 0 0 1rem;
+    margin:0;
+   
 }
 .graphic>.block{
     background-color: var(--dark);
@@ -194,10 +213,13 @@ section{
 }
 .graphic>.button{
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: var(--fw-black);
     color: var(--dark);
     padding:3rem 1rem;
 }
 .graphic>.button:hover{
     background-color: var(--light);
+    color: var(--primary1);
+
 }
+
