@@ -19,6 +19,12 @@ body{
 h1,h2,h3{
     font-weight: var(--fw-black);
 }
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
 header{
     background: conic-gradient(from 180deg at 50% 50.00%, #FB25FF 0deg, rgba(217, 217, 217, 0.00) 360deg);    padding: 1rem;
     padding:0;
@@ -36,6 +42,8 @@ nav{
     background-color: var(--light);
     padding: 0;
     margin: 0;
+    position: sticky;
+    top:0;
 }
 .nav-list{
     padding: 0;
@@ -86,9 +94,7 @@ section{
     padding: 0 0 1rem 0;
     margin: 0;
 }
-.split > .heading >h1{
-    font-size: 3rem;
-}
+
 @media (max-width:680px) {
     .split{
         flex-direction: column;
@@ -104,4 +110,42 @@ section{
         max-width: 50ch;
     }
 
+}
+
+/* Projects */
+.projects{
+    background: linear-gradient(180deg, #4DF6C6 0%, rgba(217, 217, 217, 0.00) 51.56%);
+}
+.projects-wrapper{
+    display: flex;
+    overflow:auto;
+}
+.project-card{
+    background-color: var(--light);
+    flex: 0 0 25rem;
+    position: relative;
+    margin: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+}
+.project-card >h2{
+    padding: 0;
+    margin: 0;
+}
+.button{
+    background-color: var(--dark);
+    color:var(--light);
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem 0 0 0;
+    position: absolute;
+    bottom: 4%;
+    right:2%;
+}
+.button:hover{
+    background-color: var(--primary2);
+    color:var(--dark);
 }
