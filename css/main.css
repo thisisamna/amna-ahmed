@@ -243,3 +243,10 @@ p.left{
     filter: invert(76%) sepia(61%) saturate(430%) hue-rotate(102deg) brightness(103%) contrast(93%);    
     /*filter: invert(76%) sepia(61%) saturate(430%) hue-rotate(102deg) brightness(103%) contrast(93%);*/
 }
+/*Footer*/
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 0.25rem;
+}
