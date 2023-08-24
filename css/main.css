@@ -239,4 +239,7 @@ p.left{
 .contact-icon{
     width: 5rem;
 }
-
+.contact-icon:hover{
+    filter: invert(76%) sepia(61%) saturate(430%) hue-rotate(102deg) brightness(103%) contrast(93%);    
+    /*filter: invert(76%) sepia(61%) saturate(430%) hue-rotate(102deg) brightness(103%) contrast(93%);*/
+}
