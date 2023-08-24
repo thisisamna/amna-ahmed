@@ -158,3 +158,10 @@ section{
     background-color: var(--primary2);
     color:var(--dark);
 }
+.tag{
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.2rem;
+}
+.closing{
+    text-align: right;
+}
