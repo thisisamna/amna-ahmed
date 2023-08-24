@@ -26,7 +26,6 @@ h2{
     font-size: 2rem;
 }
 header{
-    background: conic-gradient(from 180deg at 50% 50.00%, #FB25FF 0deg, rgba(217, 217, 217, 0.00) 360deg);    padding: 1rem;
     padding:0;
 }
 .header-main{
@@ -37,6 +36,7 @@ header{
     text-align: center;
     font-weight: var(--fw-black);
     text-transform: uppercase;
+    background: linear-gradient(90deg, #f764fa 0%, #FEC0FF 70%);
 }
 nav{
     background-color: var(--light);
@@ -62,6 +62,10 @@ nav{
 }
 section{
     padding: 1rem;
+}
+.intro{
+    background: conic-gradient(from 180deg at 50% 50.00%, #FB25FF 0deg, rgba(217, 217, 217, 0.00) 360deg);    padding: 1rem;
+
 }
 .inverted{
     background-color: var(--dark);
@@ -95,7 +99,7 @@ section{
     margin: 0;
 }
 
-@media (max-width:680px) {
+@media (max-width:800px) {
     .split{
         flex-direction: column;
     }
@@ -108,6 +112,11 @@ section{
     }
     .split >*{
         max-width: 50ch;
+    }.right.para{
+        padding-left: 0 !important;
+    }
+    .left.para{
+        padding-right: 0 !important;
     }
 
 }
